@@ -128,3 +128,19 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# next.js
+/.next/
+/out/
+next-env.d.ts
+
+
+# local env files
+.env*.local
+
+# misc
+.DS_Store
+*.pem
+
+# firebase
+.firebase

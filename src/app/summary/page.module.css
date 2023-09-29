@@ -1,0 +1,24 @@
+.sum-item {
+    display: flex;
+    flex-direction: row;
+    max-width: 480px;
+    padding: 6px 0;
+    justify-content: space-between;
+}
+
+    .sum-item:not(:first-of-type) {
+        border-top: 1px solid #efefef;
+    }
+
+.sum-item__title {
+    font-weight: 600;
+    flex: 1;
+}
+
+.sum-item__text {
+
+}
+
+.sum-datepicker {
+    text-align: right;
+}

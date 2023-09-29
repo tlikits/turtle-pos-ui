@@ -1,0 +1,110 @@
+.order-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 6px 1px #959595;
+    padding: 12px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.order-box__top,
+.order-box__btm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+    .order-box__btm {
+        border-top: 1px solid #ddd;
+        margin-top: 8px;
+        padding-top: 8px;
+        font-size: .8em;
+    }
+
+.order-box__name {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+    .order-box__name-text {
+        font-weight: 600;
+    }
+
+
+
+.order-box__status {
+    display: flex;
+    align-items: center;
+}
+
+    .order-box__status:before {
+        content: '';
+        display: flex;
+        border-radius: 50%;
+        width: .9em;
+        height: .9em;
+        margin-right: 6px;
+    }
+
+        .order-box__status--pending:before {
+            background-color: grey;
+        }
+
+        .order-box__status--preparing:before {
+            background-color: orange;
+        }
+
+        .order-box__status--prepared:before {
+            background-color: rgb(13 64 179);
+        }
+
+        .order-box__status--canceled:before {
+            background-color: red;
+        }
+
+        .order-box__status--served:before {
+            background-color: green;
+        }
+
+
+.order-payment-status-band {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+}
+
+    .order-payment-status-band--paid {
+        background-color: green;
+    }
+
+    .order-payment-status-band--pending {
+        background-color: orange;
+    }
+
+
+.order-not-paid {
+    margin-left: 8px;
+    color: red;
+    font-size: .8em;
+}
+
+
+.order-payment-text {
+    margin-left: 8px;
+    font-size: .8em;
+}
+
+    .order-payment-text__paid {
+        color: red;
+    }
+
+    .order-payment-text__free {
+        color: rgb(0, 94, 202);
+    }

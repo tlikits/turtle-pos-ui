@@ -1,0 +1,59 @@
+.nav-burger {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    top: 16px;
+    left: 16px;
+}
+
+    .nav-burger div {
+        width: 28px;
+        height: 4px;
+        background-color: #fff;
+        margin: 7px 0;
+        transition: 0.4s;
+        border-radius: 6px;
+    }
+
+    /* Rotate first bar */
+    .nav-burger--close div:nth-child(1) {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+
+    /* Fade out the second bar */
+    .nav-burger--close div:nth-child(2) {opacity: 0;}
+
+    /* Rotate last bar */
+    .nav-burger--close div:nth-child(3) {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+
+
+.nav-panel {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: #444;
+    border-top: 1px solid grey;
+}
+
+.nav-block {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    max-height: calc(100vh - 70px);
+    overflow: auto;
+    color: #fff;
+    font-size: 1.4em;
+}
+
+.nav-link {
+    display: flex;
+    margin-top: 12px;
+    line-height: 1.8em;
+    justify-content: center;
+    font-weight: 100;
+}
