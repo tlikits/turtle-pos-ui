@@ -10,11 +10,27 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - run: npm ci && npm run build
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: apply-configuration
+        env:
+          FIREBASE_CONFIG_UI: ${{ secrets.FIREBASE_CONFIG_UI }}
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+        run: |
+          echo $FIREBASE_CONFIG_UI > src/firebase-config.json
+          echo $FIREBASE_SERVICE_ACCOUNT_KEY > src/serviceAccountKey.json
+      - name: install-dependency
+        run: npm ci
+      - name: build
+        env:
+          LINE_CLIENT_SECRET: ${{ secrets.LINE_CLIENT_SECRET }}
+        run: npm run build
+      - name: deploy-to-firebase
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BN_TOOLBOX }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_DEPLOYMENT_SERVICE_ACCOUNT_KEY }}'
           channelId: live
-          projectId: bn-toolbox
+          projectId: '${{ secrets.FIREBASE_PROJECT_ID }}'
