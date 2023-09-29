@@ -23,6 +23,10 @@ const DEFAULT_NAV_CONFIG: NavItem[] = [
         link: '/summary',
     },
     {
+        name: 'สรุปรายการอาหาร',
+        link: '/summary/list',
+    },
+    {
         name: 'ออกจากระบบ',
         link: '/logout',
     }
