@@ -1,3 +1,4 @@
+import { CalculateType } from '@/api/model';
 import { useAuth } from '@/app/login/contexts/auth-context';
 import { OrderedMenuItem, OrderedMenuItemStatus, SelectedMenuOption } from '../api/order';
 import { orderItemApi } from '../api/order-item/order-item-impl';
@@ -9,7 +10,7 @@ export interface CartItemProps {
 }
 
 function shouldShowOption(option: SelectedMenuOption): boolean {
-    return option.calculateType !== 'BASE' && !option.default;
+    return option.calculateType !== CalculateType.BASE && !option.default;
 }
 
 function hasOptionPart(item: OrderedMenuItem): boolean {
@@ -20,7 +21,7 @@ export default function KitchenItem({ onRemove, item }: CartItemProps): JSX.Elem
     const { authUser } = useAuth();
     const authUserName = authUser?.displayName ?? '';
 
-    const baseOptionIdx = item.options.findIndex(option => option.calculateType === 'BASE');
+    const baseOptionIdx = item.options.findIndex(option => option.calculateType === CalculateType.BASE);
     const baseOption = item.options[baseOptionIdx];
 
     function renderOptionDescriptions() {

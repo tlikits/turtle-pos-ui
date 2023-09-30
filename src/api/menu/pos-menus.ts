@@ -1,4 +1,4 @@
-import { MenuItem } from '../model';
+import { CalculateType, MenuItem } from '../model';
 
 export const menus: MenuItem[] = [
     {
@@ -14,7 +14,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'process',
                 nameTh: 'รูปแบบ',
-                calculateType: 'BASE',
+                calculateType: CalculateType.BASE,
                 choices: [
                     {
                         id: '1',
@@ -44,7 +44,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'sweetness',
                 nameTh: 'ความหวาน',
-                calculateType: 'NO',
+                calculateType: CalculateType.NO,
                 choices: [
                     {
                         id: '1',
@@ -81,7 +81,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'additionalShot',
                 nameTh: 'จำนวน shot กาแฟ',
-                calculateType: 'ADDITIONAL',
+                calculateType: CalculateType.ADDITIONAL,
                 choices: [
                     {
                         id: '1',
@@ -114,7 +114,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'process',
                 nameTh: 'รูปแบบ',
-                calculateType: 'BASE',
+                calculateType: CalculateType.BASE,
                 choices: [
                     {
                         id: '1',
@@ -144,7 +144,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'sweetness',
                 nameTh: 'ความหวาน',
-                calculateType: 'NO',
+                calculateType: CalculateType.NO,
                 choices: [
                     {
                         id: '1',
@@ -167,7 +167,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'additionalShot',
                 nameTh: 'จำนวน shot กาแฟ',
-                calculateType: 'ADDITIONAL',
+                calculateType: CalculateType.ADDITIONAL,
                 choices: [
                     {
                         id: '1',
@@ -200,7 +200,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'process',
                 nameTh: 'รูปแบบ',
-                calculateType: 'BASE',
+                calculateType: CalculateType.BASE,
                 choices: [
                     {
                         id: '1',
@@ -230,7 +230,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'sweetness',
                 nameTh: 'ความหวาน',
-                calculateType: 'NO',
+                calculateType: CalculateType.NO,
                 choices: [
                     {
                         id: '1',
@@ -267,7 +267,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'additionalShot',
                 nameTh: 'จำนวน shot กาแฟ',
-                calculateType: 'ADDITIONAL',
+                calculateType: CalculateType.ADDITIONAL,
                 choices: [
                     {
                         id: '1',
@@ -300,7 +300,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'process',
                 nameTh: 'รูปแบบ',
-                calculateType: 'BASE',
+                calculateType: CalculateType.BASE,
                 choices: [
                     {
                         id: '1',
@@ -331,7 +331,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'sweetness',
                 nameTh: 'ความหวาน',
-                calculateType: 'NO',
+                calculateType: CalculateType.NO,
                 choices: [
                     {
                         id: '1',
@@ -368,7 +368,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'additionalShot',
                 nameTh: 'จำนวน shot กาแฟ',
-                calculateType: 'ADDITIONAL',
+                calculateType: CalculateType.ADDITIONAL,
                 choices: [
                     {
                         id: '1',
@@ -401,7 +401,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'process',
                 nameTh: 'รูปแบบ',
-                calculateType: 'BASE',
+                calculateType: CalculateType.BASE,
                 choices: [
                     {
                         id: '1',
@@ -432,7 +432,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'sweetness',
                 nameTh: 'ความหวาน',
-                calculateType: 'NO',
+                calculateType: CalculateType.NO,
                 choices: [
                     {
                         id: '1',
@@ -469,7 +469,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'additionalShot',
                 nameTh: 'จำนวน shot กาแฟ',
-                calculateType: 'ADDITIONAL',
+                calculateType: CalculateType.ADDITIONAL,
                 choices: [
                     {
                         id: '1',
@@ -502,7 +502,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'process',
                 nameTh: 'รูปแบบ',
-                calculateType: 'BASE',
+                calculateType: CalculateType.BASE,
                 choices: [
                     {
                         id: '1',
@@ -528,7 +528,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'process',
                 nameTh: 'รูปแบบ',
-                calculateType: 'BASE',
+                calculateType: CalculateType.BASE,
                 choices: [
                     {
                         id: '1',
@@ -554,7 +554,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'process',
                 nameTh: 'รูปแบบ',
-                calculateType: 'BASE',
+                calculateType: CalculateType.BASE,
                 choices: [
                     {
                         id: '1',
@@ -580,7 +580,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'process',
                 nameTh: 'รูปแบบ',
-                calculateType: 'BASE',
+                calculateType: CalculateType.BASE,
                 choices: [
                     {
                         id: '1',
@@ -596,7 +596,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'sweetness',
                 nameTh: 'ความหวาน',
-                calculateType: 'NO',
+                calculateType: CalculateType.NO,
                 choices: [
                     {
                         id: '1',
@@ -626,7 +626,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'additionalShot',
                 nameTh: 'จำนวน shot กาแฟ',
-                calculateType: 'ADDITIONAL',
+                calculateType: CalculateType.ADDITIONAL,
                 choices: [
                     {
                         id: '1',
@@ -659,7 +659,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'process',
                 nameTh: 'รูปแบบ',
-                calculateType: 'BASE',
+                calculateType: CalculateType.BASE,
                 choices: [
                     {
                         id: '1',
@@ -675,7 +675,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'sweetness',
                 nameTh: 'ความหวาน',
-                calculateType: 'NO',
+                calculateType: CalculateType.NO,
                 choices: [
                     {
                         id: '1',
@@ -705,7 +705,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'additionalShot',
                 nameTh: 'จำนวน shot กาแฟ',
-                calculateType: 'ADDITIONAL',
+                calculateType: CalculateType.ADDITIONAL,
                 choices: [
                     {
                         id: '1',
@@ -738,7 +738,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'process',
                 nameTh: 'รูปแบบ',
-                calculateType: 'BASE',
+                calculateType: CalculateType.BASE,
                 choices: [
                     {
                         id: '1',
@@ -754,7 +754,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'sweetness',
                 nameTh: 'ความหวาน',
-                calculateType: 'NO',
+                calculateType: CalculateType.NO,
                 choices: [
                     {
                         id: '1',
@@ -784,7 +784,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'additionalShot',
                 nameTh: 'จำนวน shot กาแฟ',
-                calculateType: 'ADDITIONAL',
+                calculateType: CalculateType.ADDITIONAL,
                 choices: [
                     {
                         id: '1',
@@ -817,7 +817,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'process',
                 nameTh: 'รูปแบบ',
-                calculateType: 'BASE',
+                calculateType: CalculateType.BASE,
                 choices: [
                     {
                         id: '1',
@@ -847,7 +847,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'sweetness',
                 nameTh: 'ความหวาน',
-                calculateType: 'NO',
+                calculateType: CalculateType.NO,
                 choices: [
                     {
                         id: '1',
@@ -894,7 +894,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'process',
                 nameTh: 'รูปแบบ',
-                calculateType: 'BASE',
+                calculateType: CalculateType.BASE,
                 choices: [
                     {
                         id: '1',
@@ -917,7 +917,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'sweetness',
                 nameTh: 'ความหวาน',
-                calculateType: 'NO',
+                calculateType: CalculateType.NO,
                 choices: [
                     {
                         id: '2',
@@ -957,7 +957,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'process',
                 nameTh: 'รูปแบบ',
-                calculateType: 'BASE',
+                calculateType: CalculateType.BASE,
                 choices: [
                     {
                         id: '1',
@@ -980,7 +980,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'sweetness',
                 nameTh: 'ความหวาน',
-                calculateType: 'NO',
+                calculateType: CalculateType.NO,
                 choices: [
                     {
                         id: '1',
@@ -1027,7 +1027,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'process',
                 nameTh: 'รูปแบบ',
-                calculateType: 'BASE',
+                calculateType: CalculateType.BASE,
                 choices: [
                     {
                         id: '1',
@@ -1057,7 +1057,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'sweetness',
                 nameTh: 'ความหวาน',
-                calculateType: 'NO',
+                calculateType: CalculateType.NO,
                 choices: [
                     {
                         id: '1',
@@ -1104,7 +1104,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'process',
                 nameTh: 'รูปแบบ',
-                calculateType: 'BASE',
+                calculateType: CalculateType.BASE,
                 choices: [
                     {
                         id: '1',
@@ -1120,7 +1120,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'sweetness',
                 nameTh: 'ความหวาน',
-                calculateType: 'NO',
+                calculateType: CalculateType.NO,
                 choices: [
                     {
                         id: '1',
@@ -1167,7 +1167,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'process',
                 nameTh: 'รูปแบบ',
-                calculateType: 'BASE',
+                calculateType: CalculateType.BASE,
                 choices: [
                     {
                         id: '1',
@@ -1183,7 +1183,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'sweetness',
                 nameTh: 'ความหวาน',
-                calculateType: 'NO',
+                calculateType: CalculateType.NO,
                 choices: [
                     {
                         id: '1',
@@ -1230,7 +1230,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'Size',
                 nameTh: 'ขนาด',
-                calculateType: 'BASE',
+                calculateType: CalculateType.BASE,
                 choices: [
                     {
                         id: '1',
@@ -1270,7 +1270,7 @@ export const menus: MenuItem[] = [
                 type: 'SINGLE',
                 name: 'price',
                 nameTh: 'ราคา',
-                calculateType: 'BASE',
+                calculateType: CalculateType.BASE,
                 choices: [
                     {
                         id: '1',

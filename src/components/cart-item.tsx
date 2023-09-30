@@ -1,3 +1,4 @@
+import { CalculateType } from '@/api/model';
 import { OrderedMenuItem, SelectedMenuOption } from '../api/order';
 
 export interface CartItemProps {
@@ -6,7 +7,7 @@ export interface CartItemProps {
 }
 
 function shouldShowOption(option: SelectedMenuOption): boolean {
-    return option.calculateType !== 'BASE' && !option.default;
+    return option.calculateType !== CalculateType.BASE && !option.default;
 }
 
 function hasOptionPart(item: OrderedMenuItem): boolean {
@@ -14,7 +15,7 @@ function hasOptionPart(item: OrderedMenuItem): boolean {
 }
 
 export default function CartItem({ onRemove, item }: CartItemProps): JSX.Element {
-    const baseOptionIdx = item.options.findIndex(option => option.calculateType === 'BASE');
+    const baseOptionIdx = item.options.findIndex(option => option.calculateType === CalculateType.BASE);
     const baseOption = item.options[baseOptionIdx];
     const { price } = item;
 

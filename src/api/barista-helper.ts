@@ -1,4 +1,4 @@
-import { MenuItem, MenuOption } from './model';
+import { CalculateType, MenuItem, MenuOption } from './model';
 import { NewOrder, Order, OrderedMenuItem, PaymentMethod, SelectedMenuOption } from './order';
 
 export class BaristaHelper {
@@ -13,10 +13,10 @@ export class BaristaHelper {
     }
 
     public static calculatePrice(item: MenuItem, selectedMenuOptions: SelectedMenuOption[]): number {
-        const baseIdx = selectedMenuOptions.findIndex(option => option.calculateType === 'BASE');
+        const baseIdx = selectedMenuOptions.findIndex(option => option.calculateType === CalculateType.BASE);
         const basePrice = baseIdx >= 0 ? selectedMenuOptions[baseIdx].price : item.basePrice;
         const additionalPrice = selectedMenuOptions.reduce((totalAdd, option) => {
-            if (option.calculateType === 'ADDITIONAL') {
+            if (option.calculateType === CalculateType.ADDITIONAL) {
                 return totalAdd + option.price;
             }
             return totalAdd;

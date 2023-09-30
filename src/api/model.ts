@@ -1,8 +1,10 @@
-import { Timestamp } from "firebase/firestore";
-
 export type MenuOption = SingleMenuOption | MultipleMenuOption;
 
-export type CalculateType = 'BASE' | 'ADDITIONAL' | 'NO';
+export enum CalculateType {
+    BASE = 'BASE',
+    ADDITIONAL = 'ADDITIONAL',
+    NO = 'NO',
+}
 
 export interface MenuSelectChoice {
     id: string;

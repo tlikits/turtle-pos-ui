@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { BaristaHelper } from '../api/barista-helper';
-import { MenuItem, MenuOption, MenuSelectChoice } from '../api/model';
+import { CalculateType, MenuItem, MenuOption, MenuSelectChoice } from '../api/model';
 import { OrderedMenuItem } from '../api/order';
 
 
@@ -42,7 +42,7 @@ export default function AddItemPanel({ onAddToCart, onClose, menuItem }: AddItem
                 className={ selectedChoices[optionIdx] === choiceIdx ? 'menu-option-block__option menu-option-block__option--active' : 'menu-option-block__option' }
                 onClick={ () => setChoice(optionIdx, choiceIdx) }
             >
-                { choice.nameTh }{ option.calculateType !== 'NO' ? ` ${option.calculateType === 'ADDITIONAL' ? '+' : ''}${choice.price}฿` : '' }
+                { choice.nameTh }{ option.calculateType !== CalculateType.NO ? ` ${option.calculateType === 'ADDITIONAL' ? '+' : ''}${choice.price}฿` : '' }
             </label>
         )
     }
