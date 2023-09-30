@@ -1,6 +1,5 @@
 'use client';
 
-import { MenuItem } from '@/models/barista-menu-model';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { MouseEvent as ReactMouseEvent, useEffect, useState } from 'react';
@@ -12,6 +11,7 @@ import AddItemPanel from '../../../components/add-item-panel';
 import CartPanel from '../../../components/cart-panel';
 import AuthGuard from '@/guards/auth-guard';
 import { useAuth } from '@/app/login/contexts/auth-context';
+import { MenuItem } from '@/api/model';
 
 function generateNewEmptyOrder(): NewOrder {
     return {

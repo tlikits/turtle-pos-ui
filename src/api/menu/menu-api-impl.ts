@@ -1,4 +1,4 @@
-import { menus } from '../barista-menus';
+import { menus } from './pos-menus';
 import { MenuItem } from '../model';
 import { MenuApi } from './types';
 
