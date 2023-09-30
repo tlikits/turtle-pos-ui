@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { BaristaHelper } from '../../../api/barista-helper';
+import { BaristaHelper } from '../../../api/order-helper';
 import { Order, OrderStatus, OrderedMenuItem, PaymentMethod, PaymentStatus, Subscription, orderApi } from '../../../api/order';
 import CartItem2 from '../../../components/cart-item2';
 import { OrderUtils } from '../../../api/order/order-util';

@@ -1,7 +1,7 @@
 import { orderItemApi } from '@/api/order-item/order-item-impl';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { BaristaHelper } from '../../../api/barista-helper';
+import { BaristaHelper } from '../../../api/order-helper';
 import { Order, OrderedMenuItem, PaymentStatus } from '../../../api/order';
 import s from './order-box.module.css';
 import { OrderedMenuItemStatus, PaymentMethod } from '@/api/order/types';

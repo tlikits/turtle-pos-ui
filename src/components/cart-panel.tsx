@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { BaristaHelper } from '../api/barista-helper';
+import { BaristaHelper } from '../api/order-helper';
 import { NewOrder, OrderedMenuItem, PaymentMethod } from '../api/order';
 import CartItem from './cart-item';
 

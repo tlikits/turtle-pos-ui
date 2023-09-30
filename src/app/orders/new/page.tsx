@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { MouseEvent as ReactMouseEvent, useEffect, useState } from 'react';
-import { BaristaHelper } from '../../../api/barista-helper';
+import { BaristaHelper } from '../../../api/order-helper';
 import { cartApi } from '../../../api/cart';
 import { menuApi } from '../../../api/menu';
 import { NewOrder, OrderedMenuItem, PaymentMethod, PaymentStatus, orderApi } from '../../../api/order';

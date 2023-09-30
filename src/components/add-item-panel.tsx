@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BaristaHelper } from '../api/barista-helper';
+import { BaristaHelper } from '../api/order-helper';
 import { CalculateType, MenuItem, MenuOption, MenuSelectChoice } from '../api/model';
 import { OrderedMenuItem } from '../api/order';
 
